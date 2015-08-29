@@ -1,6 +1,5 @@
-'use strict';
-
-var session = function($cookies, $rootScope) {
+var session = function($cookies) {
+	'use strict';
 
 	return {
 		get: function(key) {
@@ -25,4 +24,4 @@ var session = function($cookies, $rootScope) {
 };
 
 angular.module('core')
-	.factory('session', ['$cookies', '$rootScope', session]);
+	.factory('session', ['$cookies', session]);

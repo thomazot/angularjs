@@ -10,18 +10,20 @@
     <!-- endinject -->
   </head>
   <body>
-    <h1>app</h1>
-    <h2>Your new AngularJS app is now ready...</h2>
     <ng-view></ng-view>
     <!-- inject:vendor:js -->
     <script src="/angular/angular.js"></script>
-    <script src="/angular-route/angular-route.js"></script>
     <script src="/angular-cookies/angular-cookies.js"></script>
+    <script src="/angular-route/angular-route.js"></script>
     <!-- endinject -->
     <!-- inject:js -->
-    <script src="/core/core.js"></script>
-    <script src="/core/services/session.js"></script>
+    <script src="/modules/core/core.js"></script>
+    <script src="/modules/core/services/session.js"></script>
+    <script src="/modules/core/services/authentication.js"></script>
     <script src="/app.js"></script>
+    <script src="/controllers/homeCtrl.js"></script>
+    <script src="/route.js"></script>
+    <script src="/app-templates.js"></script>
     <!-- endinject -->
   </body>
 </html>
